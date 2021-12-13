@@ -5,7 +5,7 @@ import { Routes, Route } from "react-router-dom";
 import HomePage from "../NavPages/Home.js";
 import AboutPage from "../NavPages/About";
 import ServicesPage from "../NavPages/Services";
-import WorkPage from "../NavPages/Work.js";
+import WorkPage from "../NavPages/Work";
 import VisitorPage from "../NavPages/Visitor.js";
 import SettingsPage from "../NavPages/Settings.js";
 import Footer from "../../components/Footer";

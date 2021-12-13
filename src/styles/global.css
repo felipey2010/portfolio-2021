@@ -69,3 +69,138 @@ body {
   margin: 0;
   padding: 0;
 }
+
+.main-page-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--color-normal);
+}
+
+.inner-main-container {
+  height: 500px;
+  width: 900px;
+  background-color: var(--page-container-color);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.left-nav-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: 35px;
+  margin: 8px 0;
+}
+
+.left-nav-container:hover {
+  color: white;
+  cursor: pointer;
+}
+
+.left-nav {
+  display: flex;
+  align-items: center;
+  height: 30px;
+}
+
+.about-nav-icon {
+  width: 20px;
+  margin: 0 8px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.left-page-container {
+  width: 215px;
+  height: calc((100%) - (5%));
+  margin-left: 12px;
+  font-size: var(--font-size-medium);
+}
+
+.right-page-container {
+  width: calc((100%) - (27%));
+  height: calc((100%) - (5%));
+  background-color: var(--page-right-container-color);
+  border-radius: 8px;
+  font-size: var(--font-size-medium);
+  overflow-y: auto;
+  box-shadow: -1px 1px 6px 0px #000000a1;
+}
+
+.right-page-container::-webkit-scrollbar {
+  border-radius: 8px;
+  width: 12px;
+}
+
+.right-page-container::-webkit-scrollbar-track {
+  background: rgb(97, 93, 93);
+  border-radius: 6px;
+}
+
+.right-page-container::-webkit-scrollbar-thumb {
+  background: rgb(75, 75, 75);
+  border-radius: 6px;
+}
+
+.right-page-container::-webkit-scrollbar-thumb:hover {
+  background: rgb(156, 156, 156);
+}
+
+.bottom-separator {
+  width: 100%;
+  border-bottom: 1px solid rgba(95, 99, 104, 0.5);
+}
+
+.about-div-text {
+  margin: 12px;
+}
+
+.construction-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.construction-inner-container {
+  background-color: var(--page-right-container-color-2);
+  border-radius: 8px;
+  color: antiquewhite;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 95%;
+  width: 95%;
+}
+
+.construction-image {
+  width: 350px;
+  height: 350px;
+  filter: grayscale(0.7);
+  transition: all 0.5s ease-in-out;
+}
+
+.construction-image:hover {
+  transform: scale(1.1);
+  filter: drop-shadow(-8px 8px 8px black) grayscale(0.7);
+}
+
+.construction-text-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.construction-text {
+  font-size: 40px;
+  margin: 0;
+}

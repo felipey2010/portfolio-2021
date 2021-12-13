@@ -1,17 +1,15 @@
 import { useState } from "react";
-import "../../../styles/AboutPage.css";
+import "../../../styles/WorkPage.css";
 import NavAbout from "../../../components/NavAbout";
-import General from "./submenus/general";
-import Experience from "./submenus/experience";
-import Skills from "./submenus/skills";
-import Contact from "./submenus/contact";
-import Construction from "../../../components/construction";
+import Blogs from "./submenus/Blogs";
+import Dashboard from "./submenus/Dashboard";
+import Games from "./submenus/Games";
+import Stores from "./submenus/Stores.js";
+import Others from "./submenus/others.js";
 
-// Use React reveal
-
-export default function AboutPage() {
+export default function WorkPage() {
   const [activeMenu, setActiveMenu] = useState(0);
-  const menuList = ["General", "Experience", "Contact", "Skills", "Others"];
+  const menuList = ["Blogs", "Dashboard", "Stores", "Games", "Others"];
 
   return (
     <div className="main-page-container">
@@ -33,25 +31,25 @@ export default function AboutPage() {
         </div>
         <div className="right-page-container">
           {activeMenu === 0 ? (
-            <General />
+            <Blogs />
           ) : (
             <>
               {activeMenu === 1 ? (
-                <Experience />
+                <Dashboard />
               ) : (
                 <>
                   {activeMenu === 2 ? (
-                    <Contact />
+                    <Stores />
                   ) : (
                     <>
                       {activeMenu === 3 ? (
-                        <Skills />
+                        <Games />
                       ) : (
                         <>
                           {activeMenu === 4 ? (
-                            <Construction />
+                            <Others />
                           ) : (
-                            <div className="about-div-text">
+                            <div className="right-page-text">
                               {menuList[activeMenu]}
                             </div>
                           )}
