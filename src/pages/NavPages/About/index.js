@@ -7,8 +7,6 @@ import Skills from "./submenus/skills";
 import Contact from "./submenus/contact";
 import Construction from "../../../components/construction";
 
-// Use React reveal
-
 export default function AboutPage() {
   const [activeMenu, setActiveMenu] = useState(0);
   const menuList = ["General", "Experience", "Contact", "Skills", "Others"];
@@ -23,7 +21,12 @@ export default function AboutPage() {
                 className="left-nav-container"
                 key={index}
                 onClick={() => setActiveMenu(index)}>
-                <div className="left-nav">
+                <div
+                  className={
+                    index === activeMenu
+                      ? "left-nav left-nav-active"
+                      : "left-nav"
+                  }>
                   <NavAbout name={list} index={index} menu={activeMenu} />
                 </div>
                 <div className="bottom-separator"></div>

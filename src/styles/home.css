@@ -4,7 +4,6 @@
   display: flex;
   align-items: center;
   flex-direction: column;
-  color: var(--color);
   font-size: var(--font-size-large);
   background-color: var(--home-background);
   border-radius: 10px;

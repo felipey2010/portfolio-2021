@@ -1,16 +1,12 @@
 import { useState } from "react";
-import "../../../styles/WorkPage.css";
+import "../../../styles/SettingsPage.css";
+import General from "./submenus/general";
+import Construction from "../../../components/construction";
 import NavAbout from "../../../components/NavAbout";
-import Blogs from "./submenus/Blogs";
-import Dashboard from "./submenus/Dashboard";
-import Games from "./submenus/Games";
-import Stores from "./submenus/Stores.js";
-import Others from "./submenus/others.js";
 
-export default function WorkPage() {
+export default function SettingsPage() {
   const [activeMenu, setActiveMenu] = useState(0);
-  const menuList = ["Blogs", "Dashboard", "Stores", "Games", "Others"];
-
+  const menuList = ["General", "Others"];
   return (
     <div className="main-page-container">
       <div className="inner-main-container">
@@ -36,33 +32,13 @@ export default function WorkPage() {
         </div>
         <div className="right-page-container">
           {activeMenu === 0 ? (
-            <Blogs />
+            <General />
           ) : (
             <>
               {activeMenu === 1 ? (
-                <Dashboard />
+                <Construction />
               ) : (
-                <>
-                  {activeMenu === 2 ? (
-                    <Stores />
-                  ) : (
-                    <>
-                      {activeMenu === 3 ? (
-                        <Games />
-                      ) : (
-                        <>
-                          {activeMenu === 4 ? (
-                            <Others />
-                          ) : (
-                            <div className="right-page-text">
-                              {menuList[activeMenu]}
-                            </div>
-                          )}
-                        </>
-                      )}
-                    </>
-                  )}
-                </>
+                <div className="about-div-text">{menuList[activeMenu]}</div>
               )}
             </>
           )}

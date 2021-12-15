@@ -7,8 +7,7 @@ export default function Skills() {
         </div>
         <div className="description-text">
           <p className="text-p">
-            <strong>Sites {`${"&"}`} Systems:</strong> ReactJS - HTML {`${"&"}`}{" "}
-            CSS
+            <strong>Front-end:</strong> ReactJS - HTML {`${"&"}`} CSS
           </p>
         </div>
         <div className="description-text">
@@ -18,10 +17,16 @@ export default function Skills() {
         </div>
         <div className="description-text">
           <p className="text-p">
-            <strong>Tools: </strong> Joomla - Figma - Canvas - Material UI /
-            Bootstrap
+            <strong>Back-end:</strong> Node JS - MongoDB -MySQL
           </p>
         </div>
+        <div className="description-text">
+          <p className="text-p">
+            <strong>Tools: </strong> Git - Vercel - Heroku - Insomnia - Trello -
+            Joomla - Figma - Canvas - Material UI / Bootstrap
+          </p>
+        </div>
+
         <div className="description-text">
           <p className="text-p">
             <strong>Others: </strong> C/C++
@@ -29,7 +34,7 @@ export default function Skills() {
         </div>
       </div>
 
-      <div className="description-container">
+      <div className="description-container skills-container">
         <div className="description-title">
           <h6 className="text-h6">SKILLS</h6>
         </div>

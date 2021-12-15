@@ -9,6 +9,6 @@
 }
 
 .footer-p {
-  color: var(--color-normal);
+  color: var(--text-color);
   font-size: var(--font-size-small);
 }

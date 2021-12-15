@@ -6,3 +6,21 @@
   align-items: center;
   color: var(--color-normal);
 }
+
+.language-select {
+  margin-left: 14px;
+  border: 1px solid var(--border-color);
+  background-color: var(--page-right-container-color-2);
+  color: var(--switch-background-color);
+  padding: 6px;
+  border-radius: 100px;
+  outline: none;
+  text-align: center;
+  cursor: pointer;
+}
+
+.language-option {
+  border: 1px solid var(--border-color);
+  background-color: var(--select-background) !important;
+  color: var(--switch-background-color);
+}

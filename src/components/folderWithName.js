@@ -1,9 +1,9 @@
-import { FcFolder } from "react-icons/fc";
+import { FaFolder } from "react-icons/fa";
 
 export default function Folder({ name }) {
   return (
     <div className="blog-item">
-      <FcFolder className="folder-icon" />
+      <FaFolder className="folder-icon" />
       <h6 className="folder-text">{name}</h6>
     </div>
   );
