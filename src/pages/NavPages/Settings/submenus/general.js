@@ -1,6 +1,8 @@
 import { useState, useContext, useEffect } from "react";
 import CustomSwitch from "../../../../components/switch";
 import { AppContext } from "../../../../utils/AppContext";
+import Translation from "../../../../utils/Translation.json";
+
 export default function General() {
   const { theme, switchTheme, language, setLanguage } = useContext(AppContext);
   const [darkOn, setDarkOn] = useState(false);
@@ -27,20 +29,20 @@ export default function General() {
     <>
       <div className="description-container">
         <div className="description-title">
-          <h6 className="text-h6">APPEARANCCE</h6>
+          <h6 className="text-h6">{Translation[40][language]}</h6>
         </div>
         <div className="theme-container">
-          <p className="text-p">Theme</p>
+          <p className="text-p">{Translation[41][language]}</p>
           <CustomSwitch checked={darkOn} handleToggle={handleToggle} />
         </div>
       </div>
 
       <div className="description-container">
         <div className="description-title">
-          <h6 className="text-h6">LANGUAGE</h6>
+          <h6 className="text-h6">{Translation[42][language]}</h6>
         </div>
         <div className="theme-container">
-          <p className="text-p">Select Language</p>
+          <p className="text-p">{Translation[43][language]}</p>
           <select
             className="language-select"
             value={language}

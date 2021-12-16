@@ -25,15 +25,15 @@
 }
 
 .navbar-buttons-div-item:nth-child(1) {
-  background-color: rgba(255, 6, 6, 75%);
+  background-color: var(--top-buttons-red);
   margin-left: 18px;
 }
 
 .navbar-buttons-div-item:nth-child(2) {
-  background-color: rgba(252, 252, 0, 82%);
+  background-color: var(--top-buttons-yellow);
 }
 .navbar-buttons-div-item:nth-child(3) {
-  background-color: rgba(1, 255, 20, 50%);
+  background-color: var(--top-buttons-green);
 }
 
 .navlinks-div {

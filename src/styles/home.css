@@ -11,6 +11,8 @@
   border: 1px solid var(--border-color);
   overflow-x: hidden;
   position: relative;
+  transition: all 0.6s ease-in-out;
+  -webkit-transition: all 0.6s ease-in-out;
 }
 
 .home-inner-container {
