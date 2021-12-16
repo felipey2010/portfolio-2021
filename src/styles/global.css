@@ -34,6 +34,9 @@
 
   --folder-text-color: #676565;
 
+  --contact-link-color: #040404;
+  --contact-link-hover: #074018;
+
   /* Text sizes */
   --font-size-small: 14px;
   --font-size-normal: 16px;
@@ -89,6 +92,9 @@
   --select-background: rgb(66 69 71);
 
   --folder-text-color: #afafaf;
+
+  --contact-link-color: antiquewhite;
+  --contact-link-hover: #90ee90;
 
   /* Text sizes */
   --font-size-small: 14px;
@@ -282,6 +288,7 @@ body {
 .construction-text {
   font-size: 40px;
   margin: 0;
+  text-transform: uppercase;
 }
 
 /* Custom Switch CSS  */

@@ -1,63 +1,198 @@
 [
   {
     "id": 0,
-    "pt-br": "Hello",
-    "en": "Create your account and generate your link for your friends to send their favorite songs"
+    "pt": "Inicial",
+    "en": "Home"
   },
-  { "id": 1, "pt-br": "Vamos lá!", "en": "Let's go!" },
+  { "id": 1, "pt": "Sobre Mim", "en": "About Me" },
   {
     "id": 2,
-    "pt-br": "Por favor, informe seu e-mail",
-    "en": "Please, type your e-mail"
+    "pt": "Serviços",
+    "en": "My Services"
   },
   {
     "id": 3,
-    "pt-br": "Por favor, informe sua senha",
-    "en": "Please, type your password"
+    "pt": "Trabalhos",
+    "en": "My Work"
   },
-  { "id": 4, "pt-br": "Continuar", "en": "Continue" },
-  { "id": 5, "pt-br": "email aqui", "en": "email here" },
-  { "id": 6, "pt-br": "senha aqui", "en": "password here" },
-  { "id": 7, "pt-br": "Entrar", "en": "Enter" },
-  { "id": 8, "pt-br": "Cadastrar", "en": "Register" },
+  { "id": 4, "pt": "Configurações", "en": "Settings" },
+  { "id": 5, "pt": "Visitantes", "en": "Visitors" },
+  { "id": 6, "pt": "Eu sou", "en": "I am" },
+  { "id": 7, "pt": "País de Origem", "en": "Country of Origin" },
+  { "id": 8, "pt": "Gana - Oeste da África", "en": "Ghana - West Africa" },
   {
     "id": 9,
-    "pt-br": "Seu gosto musical pode ser diferente do meu. Se você não se importa, por que não compartilha comigo?",
-    "en": "Your taste of music may be different from mine. If you don't mind, why not share with me?"
+    "pt": "Educação",
+    "en": "Education"
   },
   {
     "id": 10,
-    "pt-br": "Acessar Painel de Controle",
-    "en": "Access Dashboard"
+    "pt": "Universidade",
+    "en": "University"
   },
   {
     "id": 11,
-    "pt-br": "Por favor, espere",
-    "en": "Please wait..."
+    "pt": "UFRR - Roraima - Brasil",
+    "en": "UFRR - Roraima - Brazil"
   },
   {
     "id": 12,
-    "pt-br": "Criar Conta",
-    "en": "Create Account"
+    "pt": "Escola Secundária",
+    "en": "Senior High"
   },
   {
     "id": 13,
-    "pt-br": "Criar Conta",
-    "en": "Sign Up"
+    "pt": "GSTS - Takoradi - Gana",
+    "en": "GSTS - Takoradi - Ghana"
   },
   {
     "id": 14,
-    "pt-br": "E-mail/senha inválido",
-    "en": "Invalid e-mail or password"
+    "pt": "Línguas Faladas",
+    "en": "Spoken Languages"
   },
   {
     "id": 15,
-    "pt-br": "nome do usuário",
-    "en": "username"
+    "pt": "Inglês - Nativo",
+    "en": "English - Native"
   },
   {
     "id": 16,
-    "pt-br": "confirmar senha",
-    "en": "confirm password"
+    "pt": "Português - Avançado",
+    "en": "Portuguese - Advanced"
+  },
+  {
+    "id": 17,
+    "pt": "Criado com ❤️ por Philip - 2021",
+    "en": "Made with ❤️ by Philip - 2021"
+  },
+  {
+    "id": 18,
+    "pt": "Em Construção",
+    "en": "In Construction"
+  },
+  {
+    "id": 19,
+    "pt": "Área de Atuação",
+    "en": "Area of Expertise"
+  },
+  {
+    "id": 20,
+    "pt": "Desenvolvimento de sites e sistemas",
+    "en": "Websites and Systems Development"
+  },
+  {
+    "id": 21,
+    "pt": "Manutenção de Computadores",
+    "en": "Computer Maintenance"
+  },
+  {
+    "id": 22,
+    "pt": "Experiência de Trabalho",
+    "en": "Working Experience"
+  },
+  {
+    "id": 23,
+    "pt": "Departamento de T.I (UFRR)",
+    "en": "I.T Departament (UFRR)"
+  },
+  {
+    "id": 24,
+    "pt": "Manutenção de sites / Suporte aos usuários",
+    "en": "Maintenance of sites / Support to users"
+  },
+  {
+    "id": 25,
+    "pt": "Social Me",
+    "en": "Social Me"
+  },
+  {
+    "id": 26,
+    "pt": "Desenvolvimento de Software",
+    "en": "Software Development"
+  },
+  {
+    "id": 27,
+    "pt": "UFRR (NUCELE)",
+    "en": "UFRR (NUCELE)"
+  },
+  {
+    "id": 28,
+    "pt": "Ensino de Inglês",
+    "en": "English Teaching"
+  },
+  {
+    "id": 29,
+    "pt": "Linguagens de Programação / Ferramentas",
+    "en": "Programming languages / Tools"
+  },
+  {
+    "id": 30,
+    "pt": "Aplicativos Moveís",
+    "en": "Mobile Apps"
+  },
+  {
+    "id": 31,
+    "pt": "Ferramentas",
+    "en": "Tools"
+  },
+  {
+    "id": 32,
+    "pt": "Outros",
+    "en": "Others"
+  },
+  {
+    "id": 33,
+    "pt": "Habilidades",
+    "en": "Skills"
+  },
+  {
+    "id": 34,
+    "pt": "Boa comunicação e trabalho em equipe",
+    "en": "Good Communication and Team work"
+  },
+  {
+    "id": 35,
+    "pt": "Depuração e Teste",
+    "en": "Debugging and Testing"
+  },
+  {
+    "id": 36,
+    "pt": "Inovativo",
+    "en": "Innovative"
+  },
+  {
+    "id": 37,
+    "pt": "Facilidade em aprender outras linguagens de programação",
+    "en": "Ease in learning other programming languages"
+  },
+  {
+    "id": 38,
+    "pt": "Meus Serviços",
+    "en": "My Services"
+  },
+  {
+    "id": 39,
+    "pt": "Meus Visitantes",
+    "en": "My Visitors"
+  },
+  {
+    "id": 40,
+    "pt": "Em Construção",
+    "en": "In Construction"
+  },
+  {
+    "id": 41,
+    "pt": "Em Construção",
+    "en": "In Construction"
+  },
+  {
+    "id": 42,
+    "pt": "Em Construção",
+    "en": "In Construction"
+  },
+  {
+    "id": 43,
+    "pt": "Em Construção",
+    "en": "In Construction"
   }
 ]

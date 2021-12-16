@@ -1,12 +1,21 @@
-import { useState } from "react";
+import { useState, useContext } from "react";
 import "../../../styles/SettingsPage.css";
 import General from "./submenus/general";
 import Construction from "../../../components/construction";
 import NavAbout from "../../../components/NavAbout";
+import { AppContext } from "../../../utils/AppContext";
 
 export default function SettingsPage() {
   const [activeMenu, setActiveMenu] = useState(0);
-  const menuList = ["General", "Others"];
+  const { language } = useContext(AppContext);
+
+  let menuList;
+  if (language === "pt") {
+    menuList = ["Geral", "Outros"];
+  } else {
+    menuList = ["General", "Others"];
+  }
+
   return (
     <div className="main-page-container">
       <div className="inner-main-container">

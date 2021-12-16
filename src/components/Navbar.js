@@ -1,3 +1,4 @@
+import { useContext } from "react";
 import ".././styles/navbar.css";
 import { NavLink } from "react-router-dom";
 import { IoHome, IoSettings } from "react-icons/io5";
@@ -5,8 +6,12 @@ import { FaCoffee } from "react-icons/fa";
 import { BsInfoCircleFill } from "react-icons/bs";
 import { MdWork } from "react-icons/md";
 import { CgNotes } from "react-icons/cg";
+import Translation from "../utils/Translation.json";
+import { AppContext } from "../utils/AppContext";
 
 export default function Navbar() {
+  const { language } = useContext(AppContext);
+
   return (
     <div className="navbar-container">
       <div className="navbar-buttons-div">
@@ -21,7 +26,7 @@ export default function Navbar() {
           activeClassName="active-link"
           className="nav-link">
           <IoHome className="nav-icons" />
-          <p className="nav-link-p">Home</p>
+          <p className="nav-link-p">{Translation[0][language]}</p>
         </NavLink>
         <div className="separator"></div>
 
@@ -31,7 +36,7 @@ export default function Navbar() {
           activeClassName="active-link"
           className="nav-link">
           <BsInfoCircleFill className="nav-icons" />
-          <p className="nav-link-p">About Me</p>
+          <p className="nav-link-p">{Translation[1][language]}</p>
         </NavLink>
 
         <div className="separator"></div>
@@ -42,7 +47,7 @@ export default function Navbar() {
           activeClassName="active-link"
           className="nav-link">
           <CgNotes className="nav-icons" />
-          <p className="nav-link-p">My Sevices</p>
+          <p className="nav-link-p">{Translation[2][language]}</p>
         </NavLink>
 
         <div className="separator"></div>
@@ -53,7 +58,7 @@ export default function Navbar() {
           activeClassName="active-link"
           className="nav-link">
           <MdWork className="nav-icons" />
-          <p className="nav-link-p">My Work</p>
+          <p className="nav-link-p">{Translation[3][language]}</p>
         </NavLink>
 
         <div className="separator"></div>
@@ -64,7 +69,7 @@ export default function Navbar() {
           activeClassName="active-link"
           className="nav-link">
           <IoSettings className="nav-icons" />
-          <p className="nav-link-p">Settings</p>
+          <p className="nav-link-p">{Translation[4][language]}</p>
         </NavLink>
 
         <div className="separator"></div>
@@ -75,7 +80,7 @@ export default function Navbar() {
           activeClassName="active-link"
           className="nav-link">
           <FaCoffee className="nav-icons" />
-          <p className="nav-link-p">Visitors</p>
+          <p className="nav-link-p">{Translation[5][language]}</p>
         </NavLink>
       </div>
     </div>

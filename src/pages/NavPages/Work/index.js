@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useContext } from "react";
 import "../../../styles/WorkPage.css";
 import NavAbout from "../../../components/NavAbout";
 import Blogs from "./submenus/Blogs";
@@ -6,10 +6,18 @@ import Dashboard from "./submenus/Dashboard";
 import Games from "./submenus/Games";
 import Stores from "./submenus/Stores.js";
 import Others from "./submenus/others.js";
+import { AppContext } from "../../../utils/AppContext";
 
 export default function WorkPage() {
   const [activeMenu, setActiveMenu] = useState(0);
-  const menuList = ["Blogs", "Dashboard", "Stores", "Games", "Others"];
+  const { language } = useContext(AppContext);
+
+  let menuList;
+  if (language === "pt") {
+    menuList = ["Blogs", "Dashboard", "Lojas", "Jogos", "Outros"];
+  } else {
+    menuList = ["Blogs", "Dashboard", "Stores", "Games", "Others"];
+  }
 
   return (
     <div className="main-page-container">

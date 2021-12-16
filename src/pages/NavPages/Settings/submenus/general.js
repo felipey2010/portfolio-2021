@@ -2,7 +2,7 @@ import { useState, useContext, useEffect } from "react";
 import CustomSwitch from "../../../../components/switch";
 import { AppContext } from "../../../../utils/AppContext";
 export default function General() {
-  const { theme, switchTheme } = useContext(AppContext);
+  const { theme, switchTheme, language, setLanguage } = useContext(AppContext);
   const [darkOn, setDarkOn] = useState(false);
 
   function handleToggle() {
@@ -10,6 +10,11 @@ export default function General() {
     setDarkOn(!darkOn);
     switchTheme(navTheme);
     localStorage.setItem("portfolio-theme", navTheme);
+  }
+
+  function handleChangeLanguage(value) {
+    setLanguage(value);
+    localStorage.setItem("portfolio-language", value);
   }
 
   useEffect(() => {
@@ -36,7 +41,10 @@ export default function General() {
         </div>
         <div className="theme-container">
           <p className="text-p">Select Language</p>
-          <select className="language-select">
+          <select
+            className="language-select"
+            value={language}
+            onChange={e => handleChangeLanguage(e.target.value)}>
             <option value="en" className="language-option">
               English
             </option>

@@ -4,10 +4,15 @@ export const AppContext = createContext({});
 
 const AppProvider = ({ children }) => {
   const [loading, setLoading] = useState(false);
+  // Site Theme
   const defaultDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
   const [theme, setTheme] = useState(
     localStorage.getItem("portfolio-theme", defaultDark ? "dark" : "light") ??
       "light"
+  );
+  //Site translation language
+  const [language, setLanguage] = useState(
+    localStorage.getItem("portfolio-language") ?? "en"
   );
 
   function switchTheme() {
@@ -40,6 +45,8 @@ const AppProvider = ({ children }) => {
         setTheme,
         defaultDark,
         switchTheme,
+        language,
+        setLanguage,
       }}>
       {children}
     </AppContext.Provider>

@@ -1,40 +1,48 @@
+import { useContext } from "react";
+import { AppContext } from "../../../../utils/AppContext";
+import Translation from "../../../../utils/Translation.json";
+
 export default function General() {
+  const { language } = useContext(AppContext);
+
   return (
     <>
       <div className="description-container">
         <div className="description-title">
-          <h6 className="text-h6">COUNTRY OF ORIGIN</h6>
+          <h6 className="text-h6">{Translation[7][language]}</h6>
         </div>
         <div className="description-text">
-          <p className="text-p">Ghana - West Africa</p>
+          <p className="text-p">{Translation[8][language]}</p>
         </div>
       </div>
 
       <div className="description-container">
         <div className="description-title">
-          <h6 className="text-h6">EDUCATION</h6>
+          <h6 className="text-h6">{Translation[9][language]}</h6>
         </div>
         <div className="description-text">
           <p className="text-p">
-            <strong>University:</strong> UFRR - Roraima - Brazil
+            <strong>{Translation[10][language]}:</strong>{" "}
+            {Translation[11][language]}
           </p>
         </div>
         <div className="description-text">
           <p className="text-p">
-            <strong>Senior High:</strong> GSTS - Takoradi - Ghana
+            <strong>{Translation[12][language]}:</strong>{" "}
+            {Translation[13][language]}
           </p>
         </div>
       </div>
 
       <div className="description-container">
         <div className="description-title">
-          <h6 className="text-h6">LANGUAGES</h6>
+          <h6 className="text-h6">{Translation[14][language]}</h6>
         </div>
         <div className="description-text">
-          <p className="text-p">English - Native</p>
+          <p className="text-p">{Translation[15][language]}</p>
         </div>
         <div className="description-text">
-          <p className="text-p">Portuguese - Advanced</p>
+          <p className="text-p">{Translation[16][language]}</p>
         </div>
       </div>
     </>

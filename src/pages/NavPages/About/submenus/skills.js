@@ -1,9 +1,14 @@
+import { useContext } from "react";
+import { AppContext } from "../../../../utils/AppContext";
+import Translation from "../../../../utils/Translation.json";
+
 export default function Skills() {
+  const { language } = useContext(AppContext);
   return (
     <>
       <div className="description-container">
         <div className="description-title">
-          <h6 className="text-h6">PROGRAMMING LANGUAGES / TOOLS</h6>
+          <h6 className="text-h6">{Translation[29][language]}</h6>
         </div>
         <div className="description-text">
           <p className="text-p">
@@ -12,7 +17,7 @@ export default function Skills() {
         </div>
         <div className="description-text">
           <p className="text-p">
-            <strong>Mobile Apps:</strong> React Native - Java
+            <strong>{Translation[30][language]}:</strong> React Native - Java
           </p>
         </div>
         <div className="description-text">
@@ -22,33 +27,34 @@ export default function Skills() {
         </div>
         <div className="description-text">
           <p className="text-p">
-            <strong>Tools: </strong> Git - Vercel - Heroku - Insomnia - Trello -
-            Joomla - Figma - Canvas - Material UI / Bootstrap
+            <strong>{Translation[31][language]}:</strong> Git - Vercel - Heroku
+            - Insomnia - Trello - Joomla - Figma - Canvas - Material UI /
+            Bootstrap
           </p>
         </div>
 
         <div className="description-text">
           <p className="text-p">
-            <strong>Others: </strong> C/C++
+            <strong>{Translation[32][language]}:</strong> C/C++
           </p>
         </div>
       </div>
 
       <div className="description-container skills-container">
         <div className="description-title">
-          <h6 className="text-h6">SKILLS</h6>
+          <h6 className="text-h6">{Translation[33][language]}</h6>
         </div>
         <div className="description-text">
-          <p className="text-p">Good Communication and Team work</p>
+          <p className="text-p">{Translation[34][language]}</p>
         </div>
         <div className="description-text">
-          <p className="text-p">Debugging and Testing</p>
+          <p className="text-p">{Translation[35][language]}</p>
         </div>
         <div className="description-text">
-          <p className="text-p">Innovative</p>
+          <p className="text-p">{Translation[36][language]}</p>
         </div>
         <div className="description-text">
-          <p className="text-p">Ease in learning other programming languages</p>
+          <p className="text-p">{Translation[37][language]}</p>
         </div>
       </div>
     </>

@@ -6,7 +6,7 @@ import HomePage from "../NavPages/Home.js";
 import AboutPage from "../NavPages/About";
 import ServicesPage from "../NavPages/Services";
 import WorkPage from "../NavPages/Work";
-import VisitorPage from "../NavPages/Visitor.js";
+import VisitorPage from "../NavPages/Visitor";
 import SettingsPage from "../NavPages/Settings";
 import Footer from "../../components/Footer";
 import { AppContext } from "../../utils/AppContext";
