@@ -18,7 +18,7 @@ export default function Contact() {
           <p className="text-p">
             <a
               href="https://web.facebook.com/mahamaphilip"
-              class="contact-link"
+              className="contact-link"
               target="_blank"
               rel="noreferrer">
               Facebook{" "}
@@ -29,7 +29,7 @@ export default function Contact() {
           <p className="text-p">
             <a
               href="https://www.linkedin.com/in/philip-mahama-akpanyi"
-              class="contact-link"
+              className="contact-link"
               target="_blank"
               rel="noreferrer">
               LinkedIn{" "}
@@ -40,7 +40,7 @@ export default function Contact() {
           <p className="text-p">
             <a
               href="https://github.com/felipey2010"
-              class="contact-link"
+              className="contact-link"
               target="_blank"
               rel="noreferrer">
               GitHub{" "}

@@ -26,6 +26,9 @@
   transition: all 0.2s ease-in-out;
   cursor: pointer;
   box-shadow: -1px -1px 2px 0 grey;
+  position: relative;
+  text-decoration: none;
+  color: var(--color-normal);
 }
 
 .blog-item:hover {
@@ -43,4 +46,25 @@
   font-size: 16px;
   color: var(--folder-text-color);
   text-align: center;
+}
+
+.folder-description {
+  position: absolute;
+  left: -8px;
+  top: 125px;
+  width: 250px;
+  background-color: var(--navbar-color);
+  display: none;
+  font-size: var(--font-size-14);
+  margin: 8px;
+  padding: 8px;
+  z-index: 1;
+  border-radius: 10px;
+  box-shadow: -1px -1px 2px 0 grey;
+  transition: all 0.3s ease-in-out;
+  text-align: center;
+}
+
+.blog-item:hover .folder-description {
+  display: block;
 }

@@ -1,10 +1,11 @@
 import { FaFolder } from "react-icons/fa";
 
-export default function Folder({ name }) {
+export default function Folder({ name, description, link }) {
   return (
-    <div className="blog-item">
+    <a href={link} target="_blank" rel="noreferrer" className="blog-item">
       <FaFolder className="folder-icon" />
       <h6 className="folder-text">{name}</h6>
-    </div>
+      <div className="folder-description">{description}</div>
+    </a>
   );
 }

@@ -27,6 +27,12 @@ export default function HomePage() {
           />
         </div> */}
         <h1 className="home-page-h1">Philip Akpanyi</h1>
+        <div className="frontend-dev-container">
+          <hr className="horizontal-line" />
+          <div className="frontend-text-container">
+            <h5 className="frontend-text-h5">Front-end Dev</h5>
+          </div>
+        </div>
       </div>
     </div>
   );
