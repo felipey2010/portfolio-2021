@@ -22,7 +22,7 @@ export default function Skills() {
         </div>
         <div className="description-text">
           <p className="text-p">
-            <strong>Back-end:</strong> Node JS - MongoDB -MySQL
+            <strong>Back-end:</strong> Node JS - MongoDB - MySQL
           </p>
         </div>
         <div className="description-text">

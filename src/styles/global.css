@@ -356,3 +356,12 @@ body {
   padding-top: 8px;
   color: var(--text-black);
 }
+
+.description-text:last-child {
+  border-bottom: none;
+  padding-bottom: 2px;
+}
+
+::selection {
+  background-color: var(--border-color);
+}
