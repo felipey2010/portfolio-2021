@@ -10,8 +10,8 @@
 }
 
 .navbar-buttons-div {
-  min-width: 120px;
-  height: 100%;
+  width: 120px;
+  height: 45px;
   display: flex;
   align-items: center;
   margin-right: 16px;
@@ -42,6 +42,7 @@
   border-radius: 10px;
   border: 1px solid var(--border-color);
   background-color: var(--nav-background);
+  margin: 4px 12px;
 }
 
 .nav-icons {
@@ -72,6 +73,7 @@
 
 .nav-link-p {
   font-size: var(--font-size-normal);
+  text-align: center;
 }
 
 .active-link {
@@ -89,4 +91,20 @@
   border-right: 1px solid var(--background-hover-color);
   margin: 0;
   padding: 0;
+}
+
+@media (max-width: 945px) {
+  .navlinks-div {
+    width: 80vw;
+  }
+
+  .nav-link-p {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 822px) {
+  .navlinks-div {
+    display: none;
+  }
 }

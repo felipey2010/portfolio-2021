@@ -1,6 +1,6 @@
 .home-container {
   height: 630px;
-  width: 1000px;
+  width: 980px;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -37,11 +37,13 @@
   filter: blur(3px) grayscale(1);
   /* transition: all 0.15s ease-in-out; */
   transition: all 400ms cubic-bezier(0.5, 0, 0.5, 1), opacity 150ms linear;
+  opacity: 0.5;
 }
 
 .home-page-div .home-page-img:hover {
   filter: blur(0) grayscale(0);
   border-radius: 25%;
+  opacity: 1;
 }
 
 .home-page-div:nth-child(2) {
@@ -99,4 +101,55 @@
   position: absolute;
   left: 20%;
   background-color: var(--home-background);
+}
+
+.resume-container {
+  width: 450px;
+  height: 45px;
+  text-align: center;
+  margin-top: 12px;
+}
+
+.resume-link {
+  text-decoration: none;
+  font-size: var(--font-size-22);
+  color: var(--color-normal);
+  padding: 6px;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  position: relative;
+  transition: all 0.15s ease-in-out;
+  opacity: 0.5;
+}
+
+.resume-link:hover {
+  color: var(--text-color);
+  border: 1px solid var(--border-color);
+  opacity: 1;
+}
+
+.resume-icon {
+  height: 15px;
+  width: 15px;
+  position: absolute;
+  top: -8px;
+  right: -4px;
+  background-color: var(--home-background);
+  padding: 2px;
+  z-index: 1;
+  opacity: 0;
+  color: var(--color-normal);
+  transition: all 0.15s ease-in-out;
+}
+
+.resume-link:hover .resume-icon {
+  opacity: 1;
+}
+
+/* Responsiveness */
+@media (max-width: 999px) {
+  .home-container {
+    width: 90vw;
+    height: 85vh;
+  }
 }

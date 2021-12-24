@@ -54,6 +54,19 @@ export default function Experience() {
           <p className="text-p">Portuguese - Advanced</p>
         </div>
       </div> */}
+
+      <div className="description-container">
+        <div className="description-title">
+          <h6 className="text-h6">{Translation[54][language]}</h6>
+        </div>
+        {/* Put Achievements below */}
+        {/* <div className="description-text">
+          <p className="text-p">{Translation[20][language]}</p>
+        </div>
+        <div className="description-text">
+          <p className="text-p">{Translation[21][language]}</p>
+        </div> */}
+      </div>
     </>
   );
 }

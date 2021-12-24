@@ -45,10 +45,6 @@
   font-weight: 600;
 }
 
-.skills-container {
-  margin-bottom: 20px;
-}
-
 .contact-menu-top-div {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -66,7 +62,7 @@
   background-color: var(--page-right-container-color-2);
   position: relative;
   border-radius: 10px;
-  box-shadow: -2px -2px 3px #000000a1;
+  box-shadow: -1px -1px 3px #000000a1;
 }
 
 .contact-item-container-link {
@@ -76,7 +72,7 @@
   text-decoration: none;
   cursor: pointer;
   color: var(--color-normal);
-  box-shadow: -2px -2px 3px #000000a1;
+  box-shadow: -1px -1px 3px #000000a1;
   transition: all 0.2s ease-in-out;
 }
 

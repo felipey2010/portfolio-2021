@@ -45,6 +45,24 @@ export default function General() {
           <p className="text-p">{Translation[16][language]}</p>
         </div>
       </div>
+
+      <div className="description-container">
+        <div className="description-title">
+          <h6 className="text-h6">{Translation[44][language]}</h6>
+        </div>
+        <div className="description-text">
+          <p className="text-p">{Translation[45][language]}</p>
+        </div>
+        <div className="description-text">
+          <p className="text-p">{Translation[46][language]}</p>
+        </div>
+        <div className="description-text">
+          <p className="text-p">{Translation[47][language]}</p>
+        </div>
+        <div className="description-text">
+          <p className="text-p">{Translation[48][language]}</p>
+        </div>
+      </div>
     </>
   );
 }

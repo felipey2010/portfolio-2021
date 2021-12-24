@@ -4,6 +4,7 @@ import ProfilePic from "../../images/4Github.png";
 // import { BarLoader } from "react-spinners";
 import Translation from "../../utils/Translation.json";
 import { AppContext } from "../../utils/AppContext";
+import { BiLinkExternal } from "react-icons/bi";
 
 export default function HomePage() {
   const { language } = useContext(AppContext);
@@ -32,6 +33,27 @@ export default function HomePage() {
           <div className="frontend-text-container">
             <h5 className="frontend-text-h5">Front-end Dev</h5>
           </div>
+        </div>
+        <div className="resume-container">
+          {language === "en" ? (
+            <a
+              href="https://drive.google.com/file/d/1j5J7n_4WGSi5VpxnsW5VrQziz9DJlBUN/view?usp=sharing"
+              target="_blank"
+              rel="noreferrer noopener"
+              className="resume-link">
+              {Translation[55][language]}
+              <BiLinkExternal className="resume-icon" />
+            </a>
+          ) : (
+            <a
+              href="https://drive.google.com/file/d/14cq2TwENGNZCa06Jg63439rPyG7nut7b/view?usp=sharing"
+              target="_blank"
+              rel="noreferrer noopener"
+              className="resume-link">
+              {Translation[55][language]}
+              <BiLinkExternal className="resume-icon" />
+            </a>
+          )}
         </div>
       </div>
     </div>

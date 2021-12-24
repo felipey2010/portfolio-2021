@@ -63,7 +63,7 @@ export default function Contact() {
         <a
           href="https://web.facebook.com/mahamaphilip"
           target="_blank"
-          rel="noreferrer"
+          rel="noreferrer noopener"
           className="contact-item-container-link">
           <div className="contact-item-container-top">
             <MdFacebook className="contact-item-icon" />
@@ -75,7 +75,7 @@ export default function Contact() {
         <a
           href="https://www.linkedin.com/in/philip-mahama-akpanyi"
           target="_blank"
-          rel="noreferrer"
+          rel="noreferrer noopener"
           className="contact-item-container-link">
           <div className="contact-item-container-top">
             <FaLinkedin className="contact-item-icon" />
@@ -87,7 +87,7 @@ export default function Contact() {
         <a
           href="https://github.com/felipey2010"
           target="_blank"
-          rel="noreferrer"
+          rel="noreferrer noopener"
           className="contact-item-container-link">
           <div className="contact-item-container-top">
             <FaGithub className="contact-item-icon" />

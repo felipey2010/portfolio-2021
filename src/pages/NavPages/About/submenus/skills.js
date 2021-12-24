@@ -40,7 +40,7 @@ export default function Skills() {
         </div>
       </div>
 
-      <div className="description-container skills-container">
+      <div className="description-container">
         <div className="description-title">
           <h6 className="text-h6">{Translation[33][language]}</h6>
         </div>

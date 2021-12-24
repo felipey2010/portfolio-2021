@@ -62,8 +62,8 @@
   },
   {
     "id": 17,
-    "pt": "Criado com ❤️ por Philip - 2021",
-    "en": "Made with ❤️ by Philip - 2021"
+    "pt": "Criado com ❤️ por Philip - ",
+    "en": "Made with ❤️ by Philip - "
   },
   {
     "id": 18,
@@ -194,5 +194,65 @@
     "id": 43,
     "pt": "Selecione a idioma",
     "en": "Select language"
+  },
+  {
+    "id": 44,
+    "pt": "Passatempo",
+    "en": "Hobby"
+  },
+  {
+    "id": 45,
+    "pt": "Nadar",
+    "en": "Swimmming"
+  },
+  {
+    "id": 46,
+    "pt": "Jogar jogos",
+    "en": "Play games"
+  },
+  {
+    "id": 47,
+    "pt": "Leitura",
+    "en": "Reading"
+  },
+  {
+    "id": 48,
+    "pt": "Programar",
+    "en": "Programming"
+  },
+  {
+    "id": 49,
+    "pt": "Eu",
+    "en": "I"
+  },
+  {
+    "id": 50,
+    "pt": "Aplicativos - Web & Móvel",
+    "en": "Apps - Web & Mobile"
+  },
+  {
+    "id": 51,
+    "pt": "Eu Transformo Suas",
+    "en": "I Transform Your"
+  },
+  {
+    "id": 52,
+    "pt": "IDEIAS",
+    "en": "IDEAS"
+  },
+  {
+    "id": 53,
+    "pt": "Em Realidade",
+    "en": "Into Reality"
+  },
+  {
+    "id": 54,
+    "pt": "Conquistas",
+    "en": "Achievements"
+  },
+  {
+    "id": 55,
+    "pt": "Veja CV",
+    "en": "Check CV"
   }
 ]

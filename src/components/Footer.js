@@ -8,7 +8,10 @@ export default function Footer() {
 
   return (
     <div className="footer-container">
-      <p className="footer-p">{Translation[17][language]}</p>
+      <p className="footer-p">
+        {Translation[17][language]}
+        {new Date().getFullYear()}
+      </p>
     </div>
   );
 }
