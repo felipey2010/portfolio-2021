@@ -30,8 +30,10 @@ export default function HomePage() {
         <h1 className="home-page-h1">Philip Akpanyi</h1>
         <div className="frontend-dev-container">
           <hr className="horizontal-line" />
-          <div className="frontend-text-container">
-            <h5 className="frontend-text-h5">Front-end Dev</h5>
+          <div className="frontend-box-container">
+            <div className="frontend-text-container">
+              <h5 className="frontend-text-h5">Front-end Dev</h5>
+            </div>
           </div>
         </div>
         <div className="resume-container">

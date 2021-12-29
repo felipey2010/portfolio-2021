@@ -244,18 +244,17 @@ body {
 }
 
 .right-page-container::-webkit-scrollbar {
-  border-radius: 8px;
   width: 12px;
 }
 
 .right-page-container::-webkit-scrollbar-track {
   background: var(--scrollbar-trackbar);
-  border-radius: 6px;
+  border-radius: 0 6px 6px 0;
 }
 
 .right-page-container::-webkit-scrollbar-thumb {
   background: var(--scrollbar-thumb);
-  border-radius: 6px;
+  border-radius: 0 6px 6px 0;
 }
 
 .right-page-container::-webkit-scrollbar-thumb:hover {
@@ -363,7 +362,7 @@ body {
   display: flex;
   align-items: center;
   margin: 0 12px;
-  border-bottom: 1px solid var(--border-color);
+  /* border-bottom: 1px solid var(--border-color); */
 }
 
 .text-p {
