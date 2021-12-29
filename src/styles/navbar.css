@@ -7,6 +7,7 @@
   box-shadow: 0 2px 7px -2px #0c0303;
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 
 .navbar-buttons-div {

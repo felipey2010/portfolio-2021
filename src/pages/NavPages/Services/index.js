@@ -3,11 +3,12 @@ import { useContext, useState, createRef, useLayoutEffect } from "react";
 import { AppContext } from "../../../utils/AppContext";
 import FirstService from "./sub-items/firstService";
 import SecondService from "./sub-items/secondService";
+import ThirdService from "./sub-items/thirdService";
 import { BsArrowLeftCircleFill, BsArrowRightCircleFill } from "react-icons/bs";
 import Shake from "react-reveal/Shake";
 
 export default function ServicesPage() {
-  const numberOfSteps = 2; //Number of Services to show
+  const numberOfSteps = 3; //Number of Services to show
   const [step, setStep] = useState(0);
   const { language } = useContext(AppContext);
   const divRef = createRef();
@@ -69,6 +70,7 @@ export default function ServicesPage() {
               </Shake>
             )}
             {step === 1 && <SecondService language={language} />}
+            {step === 2 && <ThirdService language={language} />}
           </div>
         </div>
         <div className="services-right-side">

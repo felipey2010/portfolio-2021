@@ -8,6 +8,7 @@ import { MdWork } from "react-icons/md";
 import { CgNotes } from "react-icons/cg";
 import Translation from "../utils/Translation.json";
 import { AppContext } from "../utils/AppContext";
+import Time from "./Time";
 
 export default function Navbar() {
   const { language } = useContext(AppContext);
@@ -83,6 +84,7 @@ export default function Navbar() {
           <p className="nav-link-p">{Translation[5][language]}</p>
         </NavLink>
       </div>
+      <Time />
     </div>
   );
 }

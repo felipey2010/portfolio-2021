@@ -51,9 +51,9 @@
 
 .folder-description {
   position: absolute;
-  left: -8px;
+  left: -10px;
   top: 125px;
-  width: 250px;
+  right: 0;
   background-color: var(--navbar-color);
   display: none;
   font-size: var(--font-size-14);
@@ -68,4 +68,16 @@
 
 .blog-item:hover .folder-description {
   display: block;
+}
+
+@media (max-width: 650px) {
+  .blog-container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 500px) {
+  .blog-container {
+    grid-template-columns: 1fr;
+  }
 }

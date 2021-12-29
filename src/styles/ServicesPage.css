@@ -86,7 +86,7 @@
 .first-service-text-bold {
   font-size: var(--font-size-extra-large);
   font-weight: 600;
-  width: 300px;
+  width: 320px;
   height: 70px;
   transition: all 0.3s ease-in-out;
   display: flex;

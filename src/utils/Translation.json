@@ -232,13 +232,13 @@
   },
   {
     "id": 51,
-    "pt": "Eu Transformo Suas",
-    "en": "I Transform Your"
+    "pt": "Deixe-me Transformar",
+    "en": "Let Me Transform"
   },
   {
     "id": 52,
-    "pt": "IDEIAS",
-    "en": "IDEAS"
+    "pt": "SUAS IDEIAS",
+    "en": "YOUR IDEAS"
   },
   {
     "id": 53,
@@ -254,5 +254,50 @@
     "id": 55,
     "pt": "Veja CV",
     "en": "Check CV"
+  },
+  {
+    "id": 56,
+    "pt": "Como posso te chamar?",
+    "en": "What can I call you?"
+  },
+  {
+    "id": 57,
+    "pt": "O seu email para enviar mensagem",
+    "en": "Your email to send message"
+  },
+  {
+    "id": 58,
+    "pt": "Sua mensagem",
+    "en": "Your message"
+  },
+  {
+    "id": 59,
+    "pt": "rede social",
+    "en": "social media"
+  },
+  {
+    "id": 60,
+    "pt": "Enviar",
+    "en": "Send"
+  },
+  {
+    "id": 61,
+    "pt": "Eu adoraria ouvir de você. Sinta-se à vontade para me enviar um feedback",
+    "en": "I would love to hear from you. Feel free to send me a feedback"
+  },
+  {
+    "id": 62,
+    "pt": "Deixe-me",
+    "en": "Let me"
+  },
+  {
+    "id": 63,
+    "pt": "REFORMAR",
+    "en": "REFORM"
+  },
+  {
+    "id": 64,
+    "pt": "Seu Site Antigo",
+    "en": "Your Old Site"
   }
 ]

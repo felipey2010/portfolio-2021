@@ -11,6 +11,7 @@
   --background-hover-color: #c4c4c487;
   --nav-hover-color: #4f4f50;
   --button-color: #9aa0a6;
+  --button-color-2: #f7f7f7;
   --button-background: rgb(22, 26, 49);
   --text-color: #0c0c0c;
   --text-color-2: #8ab4f8;
@@ -80,6 +81,7 @@
   --background-hover-color: #5f636887;
   --nav-hover-color: #4f4f50;
   --button-color: #9aa0a6;
+  --button-color-2: #1a191926;
   --button-background: rgb(22, 26, 49);
   --text-color: #e8eaed;
   --text-color-2: #8ab4f8;
@@ -227,6 +229,7 @@ body {
   height: calc((100%) - (5%));
   margin-left: 12px;
   font-size: var(--font-size-medium);
+  margin-left: 8px;
 }
 
 .right-page-container {
@@ -237,6 +240,7 @@ body {
   font-size: var(--font-size-medium);
   overflow-y: auto;
   box-shadow: -1px 1px 6px 0px #000000a1;
+  margin-right: 8px;
 }
 
 .right-page-container::-webkit-scrollbar {
@@ -380,4 +384,22 @@ body {
 
 ::selection {
   background-color: var(--border-color);
+}
+
+.time-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6px;
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  margin-right: 4px;
+}
+
+.time-hours,
+.time-minutes {
+  margin: 0;
+  padding: 0;
+  color: var(--text-black);
+  font-size: 14px;
 }
