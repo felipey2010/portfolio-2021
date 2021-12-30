@@ -4,6 +4,8 @@ export const AppContext = createContext({});
 
 const AppProvider = ({ children }) => {
   const [loading, setLoading] = useState(false);
+  const [openMenu, setOpenMenu] = useState(false);
+  const [menuName, setMenuName] = useState("");
   // Site Theme
   const defaultDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
   const [theme, setTheme] = useState(
@@ -18,6 +20,15 @@ const AppProvider = ({ children }) => {
   function switchTheme() {
     const navTheme = theme === "light" ? "dark" : "light";
     setTheme(navTheme);
+  }
+
+  function getMenuName() {
+    setMenuName(document.querySelector(".active").text.toString());
+    const timeoutId = setTimeout(() => {
+      setMenuName(document.querySelector(".active").text.toString());
+      setOpenMenu(false);
+    }, 100);
+    return () => clearTimeout(timeoutId);
   }
 
   //Loading function
@@ -47,6 +58,11 @@ const AppProvider = ({ children }) => {
         switchTheme,
         language,
         setLanguage,
+        openMenu,
+        setOpenMenu,
+        menuName,
+        setMenuName,
+        getMenuName,
       }}>
       {children}
     </AppContext.Provider>

@@ -4,7 +4,8 @@ import { AppContext } from "../../../../utils/AppContext";
 import Translation from "../../../../utils/Translation.json";
 
 export default function General() {
-  const { theme, switchTheme, language, setLanguage } = useContext(AppContext);
+  const { theme, switchTheme, language, setLanguage, getMenuName } =
+    useContext(AppContext);
   const [darkOn, setDarkOn] = useState(false);
 
   function handleToggle() {
@@ -17,6 +18,7 @@ export default function General() {
   function handleChangeLanguage(value) {
     setLanguage(value);
     localStorage.setItem("portfolio-language", value);
+    getMenuName();
   }
 
   useEffect(() => {

@@ -176,8 +176,36 @@
   background-color: var(--background-hover-color);
 }
 
+.contact-form-message {
+  text-align: center;
+}
+
 .contact-form-message-p {
   margin: 0;
   font-size: var(--font-size-14);
   text-align: centers;
+}
+
+@media (max-width: 912px) {
+  .contact-menu-top-div {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 695px) {
+  .contact-form-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 680px) {
+  .contact-menu-top-div {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 455px) {
+  .contact-item-container-text {
+    font-size: 14px;
+  }
 }

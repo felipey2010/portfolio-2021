@@ -17,9 +17,11 @@
 
 .home-inner-container {
   width: 100%;
-  height: calc(100% - 77px);
+  height: calc(100% - 87px);
   display: flex;
   align-items: center;
+  justify-content: center;
+  margin-top: 10px;
 }
 
 .home-page-div {
