@@ -17,10 +17,17 @@
   outline: none;
   text-align: center;
   cursor: pointer;
+  width: 45%;
 }
 
 .language-option {
   border: 1px solid var(--border-color);
   background-color: var(--select-background) !important;
   color: var(--switch-background-color);
+}
+
+@media (max-width: 780px) {
+  .language-select {
+    width: 100%;
+  }
 }

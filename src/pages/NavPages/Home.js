@@ -5,6 +5,7 @@ import ProfilePic from "../../images/4Github.png";
 import Translation from "../../utils/Translation.json";
 import { AppContext } from "../../utils/AppContext";
 import { BiLinkExternal } from "react-icons/bi";
+import Typed from "react-typed";
 
 export default function HomePage() {
   const { language } = useContext(AppContext);
@@ -32,7 +33,15 @@ export default function HomePage() {
           <hr className="horizontal-line" />
           <div className="frontend-box-container">
             <div className="frontend-text-container">
-              <h5 className="frontend-text-h5">Front-end Dev</h5>
+              {/* <h5 className="frontend-text-h5">Front-end Dev</h5> */}
+              <Typed
+                strings={["Front-end Dev", "Backend Dev"]}
+                className="frontend-text-h5"
+                typeSpeed={120}
+                backSpeed={120}
+                backDelay={1000}
+                startDelay={1000}
+                loop></Typed>
             </div>
           </div>
         </div>

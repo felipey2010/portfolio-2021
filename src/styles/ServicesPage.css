@@ -49,6 +49,7 @@
   justify-content: center;
   flex-direction: column;
   transition: all 0.2s ease-in-out;
+  width: 100%;
 }
 
 .div-animate-left {
@@ -111,10 +112,28 @@
 .first-service-text-normal {
   font-size: var(--font-size-large);
   margin: 12px 0;
+  text-align: center;
 }
 
 .services-center-container {
   overflow: hidden;
   display: flex;
   align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 780px) {
+  .services-inner-container {
+    width: 100%;
+  }
+
+  .first-service-text-bold {
+    font-size: 28px;
+    height: 36px;
+  }
+
+  .first-service-text-normal {
+    font-size: 24px;
+    width: 200px;
+  }
 }

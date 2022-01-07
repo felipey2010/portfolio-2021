@@ -18,6 +18,8 @@
   --text-black: #000000;
   --footer-border: #212327;
   --footer-text: rgba(255, 255, 255, 0.54);
+  --icon-color-normal: rgba(149, 149, 149, 1);
+  --icon-color-active: rgba(0, 0, 0, 1);
 
   --page-container-color: rgba(255, 255, 255, 0.75);
   --page-right-container-color: rgba(255, 255, 255, 0.3);
@@ -88,6 +90,8 @@
   --text-black: #ffffff;
   --footer-border: #212327;
   --footer-text: rgba(255, 255, 255, 0.54);
+  --icon-color-normal: rgba(121, 121, 121, 1);
+  --icon-color-active: rgba(255, 255, 255, 1);
 
   --page-container-color: rgba(95, 99, 104, 0.27);
   --page-right-container-color: rgba(95, 99, 104, 0.3);
@@ -210,10 +214,16 @@ body {
   display: flex;
   align-items: center;
   height: 30px;
+  color: var(--icon-color-normal);
 }
 
 .left-nav-active {
   font-weight: 600;
+  color: var(--icon-color-active);
+}
+
+.left-nav-active svg {
+  color: var(--icon-color-active);
 }
 
 .about-nav-icon {
@@ -231,6 +241,20 @@ body {
   font-size: var(--font-size-medium);
   margin-left: 8px;
   max-width: 200px;
+}
+
+.left-page-desktop {
+  display: block;
+}
+
+.left-page-mobile {
+  display: none;
+}
+
+.left-mobile-icon {
+  width: 24px;
+  height: 100%;
+  color: var(--icon-color-normal);
 }
 
 .right-page-container {
@@ -367,9 +391,8 @@ body {
 }
 
 .text-p {
-  margin: 8px 0;
+  padding: 4px;
   font-size: var(--font-size-small);
-  padding-top: 8px;
   color: var(--text-black);
 }
 
@@ -411,5 +434,23 @@ body {
 
   .left-page-container {
     font-size: 14px;
+  }
+}
+
+@media (max-width: 780px) {
+  .left-page-container {
+    width: 20%;
+  }
+
+  .left-page-desktop {
+    display: none;
+  }
+
+  .left-page-mobile {
+    display: block;
+  }
+
+  .left-nav {
+    justify-content: center;
   }
 }

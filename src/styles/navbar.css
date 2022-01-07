@@ -43,7 +43,7 @@
   border-radius: 10px;
   border: 1px solid var(--border-color);
   background-color: var(--nav-background);
-  margin: 4px 12px;
+  margin: 4px 8px;
 }
 
 .nav-icons {
@@ -73,8 +73,10 @@
 }
 
 .nav-link-p {
-  font-size: var(--font-size-normal);
+  font-size: 0.7ch;
   text-align: center;
+  margin: 0;
+  padding: 0;
 }
 
 .active-link {
@@ -145,16 +147,6 @@
 
 @media (max-width: 945px) {
   .navlinks-div {
-    width: 80vw;
-  }
-
-  .nav-link-p {
-    font-size: 12px;
-  }
-}
-
-@media (max-width: 822px) {
-  .navlinks-div {
     display: none;
   }
 
@@ -171,11 +163,6 @@
     margin: 0;
     padding: 0;
     height: 0;
-  }
-
-  .nav-link-p {
-    font-size: 16px;
-    margin-right: 4px;
   }
 
   .nav-link {

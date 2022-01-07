@@ -95,9 +95,10 @@
 
 .frontend-text-h5 {
   margin: 0;
-  padding: 8px;
+  padding: 4px;
   border: 1px solid var(--border-color);
   border-radius: 10px;
+  font-size: 1ch;
 }
 
 .frontend-box-container {

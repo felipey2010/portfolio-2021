@@ -60,20 +60,22 @@
 
 .contact-item-container {
   background-color: var(--page-right-container-color-2);
-  position: relative;
   border-radius: 10px;
   box-shadow: -1px -1px 3px #000000a1;
+  display: flex;
+  align-items: center;
 }
 
 .contact-item-container-link {
   background-color: var(--page-right-container-color-2);
-  position: relative;
   border-radius: 10px;
   text-decoration: none;
   cursor: pointer;
   color: var(--color-normal);
   box-shadow: -1px -1px 3px #000000a1;
   transition: all 0.2s ease-in-out;
+  display: flex;
+  align-items: center;
 }
 
 .contact-item-container-link:hover {
@@ -81,21 +83,10 @@
   color: var(--color-highlight);
 }
 
-.contact-item-container-top {
-  position: absolute;
-  top: -8px;
-  left: 4px;
-}
-
-.contact-item-container-top {
-  display: flex;
-  align-items: center;
-}
-
 .contact-item-icon {
-  height: 24px;
-  width: 24px;
-  margin-right: 10px;
+  height: 22px;
+  width: 22px;
+  margin: 4px;
 }
 
 .contact-item-text {
@@ -104,7 +95,7 @@
 }
 
 .contact-item-container-text {
-  margin: 14px 6px 6px 6px;
+  margin: 6px 6px 6px 6px;
 }
 
 .contact-form-div {
@@ -133,6 +124,8 @@
   border-radius: 4px;
   padding: 4px 8px;
   font-size: var(--font-size-14);
+  background-color: var(--background-color);
+  color: var(--text-black);
 }
 
 .contact-item-name::placeholder,
@@ -153,6 +146,8 @@
   border-radius: 4px;
   resize: vertical;
   font-size: var(--font-size-16);
+  background-color: var(--background-color);
+  color: var(--text-black);
 }
 
 .contact-send {
