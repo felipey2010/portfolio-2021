@@ -26,9 +26,9 @@ export default function ServicesPage() {
   function handleNext() {
     const containerRef = document.getElementById("services-animated-div");
     containerRef.classList.add("div-animate-left");
-    // if (step + 1 === numberOfSteps) setStep(0);
-    // else setStep(step + 1);
-    // removeRef("div-animate-left");
+    if (step + 1 === numberOfSteps) setStep(0);
+    else setStep(step + 1);
+    removeRef("div-animate-left");
   }
 
   function handlePrevious() {
