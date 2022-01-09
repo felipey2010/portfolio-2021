@@ -15,7 +15,7 @@
   height: 45px;
   display: flex;
   align-items: center;
-  margin-right: 16px;
+  margin-right: 8px;
 }
 
 .navbar-buttons-div-item {
@@ -73,10 +73,12 @@
 }
 
 .nav-link-p {
-  font-size: 0.7ch;
+  font-size: 0.6ch;
   text-align: center;
   margin: 0;
   padding: 0;
+  width: max-content;
+  font-weight: 700;
 }
 
 .active-link {
