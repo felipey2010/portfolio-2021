@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-
+import { IoTimeOutline } from "react-icons/io5";
 export default function Time() {
   const [hour, setHour] = useState(0);
   const [minute, setMinute] = useState(0);
@@ -37,6 +37,7 @@ export default function Time() {
 
   return (
     <div className="time-container">
+      <IoTimeOutline />
       <p className="time-hours">{hour}h:</p>
       <p className="time-minutes">{minute}m</p>
     </div>
