@@ -241,6 +241,7 @@ body {
   font-size: var(--font-size-medium);
   margin-left: 8px;
   max-width: 200px;
+  overflow-y: auto;
 }
 
 .left-page-desktop {
@@ -283,6 +284,25 @@ body {
 }
 
 .right-page-container::-webkit-scrollbar-thumb:hover {
+  background: var(--scrollbar-thumb-hover);
+}
+
+/* Left page scrollbar */
+.left-page-container::-webkit-scrollbar {
+  display: none;
+}
+
+.left-page-container::-webkit-scrollbar-track {
+  background: var(--scrollbar-trackbar);
+  border-radius: 0 6px 6px 0;
+}
+
+.left-page-container::-webkit-scrollbar-thumb {
+  background: var(--scrollbar-thumb);
+  border-radius: 0 6px 6px 0;
+}
+
+.left-page-container::-webkit-scrollbar-thumb:hover {
   background: var(--scrollbar-thumb-hover);
 }
 
