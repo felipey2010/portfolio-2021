@@ -1,10 +1,10 @@
 import { useContext } from "react";
-import Folder from "../../../../components/folderWithName";
+import Project from "../../../../components/Project";
 import { AppContext } from "../../../../utils/AppContext";
 
 export default function Blogs() {
   const blogs = ["Duffy", "Chirstmas Wishes", "Tech Blog"];
-  const links = [
+  const DemoLink = [
     "https://duffy-services.vercel.app/",
     "https://send-wishes.herokuapp.com/",
     "https://tech-blog-chi.vercel.app/",
@@ -25,15 +25,21 @@ export default function Blogs() {
       "A blog developed to publish news related to technology",
     ];
   }
+  const GithubLink = [
+    "https://github.com/felipey2010/duffy-services.git",
+    "https://github.com/felipey2010/send_wishes_frontend.git",
+    "https://github.com/felipey2010/frontend_trabalho_final.git",
+  ];
 
   return (
     <div className="blog-container">
       {blogs.map((blog, index) => {
         return (
-          <Folder
+          <Project
             name={blog}
             description={ProjectDescription[index]}
-            link={links[index]}
+            demo={DemoLink[index]}
+            gitURL={GithubLink[index]}
             key={index}
           />
         );

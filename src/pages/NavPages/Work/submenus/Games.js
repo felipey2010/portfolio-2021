@@ -1,11 +1,11 @@
 // import { useState } from "react";
-import Folder from "../../../../components/folderWithName";
+import Project from "../../../../components/Project";
 import { useContext } from "react";
 import { AppContext } from "../../../../utils/AppContext";
 
 export default function Dashboard() {
   const games = ["Math Game"];
-  const links = ["https://jogo-educativo.vercel.app/"];
+  const DemoLink = ["https://jogo-educativo.vercel.app/"];
 
   const { language } = useContext(AppContext);
 
@@ -20,14 +20,17 @@ export default function Dashboard() {
     ];
   }
 
+  const GithubLink = ["https://github.com/felipey2010/jogo-educativo.git"];
+
   return (
     <div className="blog-container">
       {games.map((game, index) => {
         return (
-          <Folder
+          <Project
             name={game}
             description={ProjectDescription[index]}
-            link={links[index]}
+            demo={DemoLink[index]}
+            gitURL={GithubLink[index]}
             key={index}
           />
         );

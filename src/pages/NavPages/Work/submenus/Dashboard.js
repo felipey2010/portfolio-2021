@@ -1,11 +1,11 @@
 // import { useState } from "react";
-import Folder from "../../../../components/folderWithName";
+import Project from "../../../../components/Project";
 import { useContext } from "react";
 import { AppContext } from "../../../../utils/AppContext";
 
 export default function Dashboard() {
   const dashboard = ["Test Dashboard"];
-  const links = ["https://dashboard-ibg.vercel.app/"];
+  const DemoLink = ["https://dashboard-ibg.vercel.app/"];
 
   const { language } = useContext(AppContext);
 
@@ -20,14 +20,17 @@ export default function Dashboard() {
     ];
   }
 
+  const GithubLink = ["https://github.com/felipey2010/frontend_ibg.git"];
+
   return (
     <div className="blog-container">
       {dashboard.map((dash, index) => {
         return (
-          <Folder
+          <Project
             name={dash}
             description={ProjectDescription[index]}
-            link={links[index]}
+            demo={DemoLink[index]}
+            gitURL={GithubLink[index]}
             key={index}
           />
         );

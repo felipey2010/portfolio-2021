@@ -1,5 +1,5 @@
 // import { useState } from "react";
-import Folder from "../../../../components/folderWithName";
+import Project from "../../../../components/Project";
 import { useContext } from "react";
 import { AppContext } from "../../../../utils/AppContext";
 
@@ -11,7 +11,7 @@ export default function Others() {
     "Google Clone",
     "Dashboard API",
   ];
-  const links = [
+  const DemoLink = [
     "https://contact-list-webapp.vercel.app/",
     "https://random-quote-web-app.vercel.app/",
     "https://game-of-thrones-web-app.vercel.app/",
@@ -40,14 +40,23 @@ export default function Others() {
     ];
   }
 
+  const GithubLink = [
+    "https://github.com/felipey2010/contact-list-app.git",
+    "https://github.com/felipey2010/random_quote_web_app.git",
+    "https://github.com/felipey2010/game_of_thrones_web_app.git",
+    "https://github.com/felipey2010/google-clone.git",
+    "",
+  ];
+
   return (
     <div className="blog-container">
       {others.map((other, index) => {
         return (
-          <Folder
+          <Project
             name={other}
             description={ProjectDescription[index]}
-            link={links[index]}
+            demo={DemoLink[index]}
+            gitURL={GithubLink[index]}
             key={index}
           />
         );

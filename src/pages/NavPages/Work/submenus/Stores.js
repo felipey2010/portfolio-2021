@@ -1,10 +1,10 @@
-import Folder from "../../../../components/folderWithName";
+import Project from "../../../../components/Project";
 import { useContext } from "react";
 import { AppContext } from "../../../../utils/AppContext";
 
 export default function Dashboard() {
   const stores = ["Laptop Store"];
-  const links = ["https://wolves-notebooks.netlify.app/"];
+  const DemoLink = ["https://wolves-notebooks.netlify.app/"];
 
   const { language } = useContext(AppContext);
 
@@ -19,14 +19,19 @@ export default function Dashboard() {
     ];
   }
 
+  const GithubLink = [
+    "https://gitlab.com/grupo-b-proj-e-implementa-o-de-sistemas/sistema-web-notebook.git",
+  ];
+
   return (
     <div className="blog-container">
       {stores.map((store, index) => {
         return (
-          <Folder
+          <Project
             name={store}
             description={ProjectDescription[index]}
-            link={links[index]}
+            demo={DemoLink[index]}
+            gitURL={GithubLink[index]}
             key={index}
           />
         );
