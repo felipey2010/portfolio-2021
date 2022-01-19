@@ -23,6 +23,8 @@ export default function Dashboard() {
     "https://gitlab.com/grupo-b-proj-e-implementa-o-de-sistemas/sistema-web-notebook.git",
   ];
 
+  const imgURL = ["img/wolves.jpg"];
+
   return (
     <div className="blog-container">
       {stores.map((store, index) => {
@@ -32,6 +34,7 @@ export default function Dashboard() {
             description={ProjectDescription[index]}
             demo={DemoLink[index]}
             gitURL={GithubLink[index]}
+            imgURL={imgURL[index]}
             key={index}
           />
         );

@@ -48,6 +48,14 @@ export default function Others() {
     "",
   ];
 
+  const imgURL = [
+    "img/contact.jpg",
+    "img/quotes.jpg",
+    "img/got.jpg",
+    "img/google.jpg",
+    "img/dashboard.jpg",
+  ];
+
   return (
     <div className="blog-container">
       {others.map((other, index) => {
@@ -57,6 +65,7 @@ export default function Others() {
             description={ProjectDescription[index]}
             demo={DemoLink[index]}
             gitURL={GithubLink[index]}
+            imgURL={imgURL[index]}
             key={index}
           />
         );

@@ -3,7 +3,7 @@ import Project from "../../../../components/Project";
 import { AppContext } from "../../../../utils/AppContext";
 
 export default function Blogs() {
-  const blogs = ["Duffy", "Chirstmas Wishes", "Tech Blog"];
+  const blogs = ["Duffy", "Send Wishes", "Tech Blog"];
   const DemoLink = [
     "https://duffy-services.vercel.app/",
     "https://send-wishes.herokuapp.com/",
@@ -31,6 +31,8 @@ export default function Blogs() {
     "https://github.com/felipey2010/frontend_trabalho_final.git",
   ];
 
+  const imgURL = ["img/duffy.jpg", "img/wishes.jpg", "img/tech.jpg"];
+
   return (
     <div className="blog-container">
       {blogs.map((blog, index) => {
@@ -40,6 +42,7 @@ export default function Blogs() {
             description={ProjectDescription[index]}
             demo={DemoLink[index]}
             gitURL={GithubLink[index]}
+            imgURL={imgURL[index]}
             key={index}
           />
         );

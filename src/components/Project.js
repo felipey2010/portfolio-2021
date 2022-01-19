@@ -1,11 +1,10 @@
-import logo from "../images/project.jpg";
 import { AiFillGithub, AiOutlineLink } from "react-icons/ai";
 
-export default function Project({ name, description, demo, gitURL }) {
+export default function Project({ name, description, demo, gitURL, imgURL }) {
   return (
     <div className="project-container">
       <div className="image-section">
-        <img src={logo} alt="project" />
+        <img src={imgURL} alt="project" />
         <div className="text-overlay">
           <h6 className="text-overlay-text">{name}</h6>
         </div>

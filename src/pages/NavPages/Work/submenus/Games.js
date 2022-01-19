@@ -22,6 +22,8 @@ export default function Dashboard() {
 
   const GithubLink = ["https://github.com/felipey2010/jogo-educativo.git"];
 
+  const imgURL = ["img/math.jpg"];
+
   return (
     <div className="blog-container">
       {games.map((game, index) => {
@@ -31,6 +33,7 @@ export default function Dashboard() {
             description={ProjectDescription[index]}
             demo={DemoLink[index]}
             gitURL={GithubLink[index]}
+            imgURL={imgURL[index]}
             key={index}
           />
         );

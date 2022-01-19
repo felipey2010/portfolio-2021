@@ -22,6 +22,8 @@ export default function Dashboard() {
 
   const GithubLink = ["https://github.com/felipey2010/frontend_ibg.git"];
 
+  const imgURL = ["img/dashboard.jpg"];
+
   return (
     <div className="blog-container">
       {dashboard.map((dash, index) => {
@@ -31,6 +33,7 @@ export default function Dashboard() {
             description={ProjectDescription[index]}
             demo={DemoLink[index]}
             gitURL={GithubLink[index]}
+            imgURL={imgURL[index]}
             key={index}
           />
         );
