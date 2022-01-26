@@ -8,6 +8,7 @@ import ServicesPage from "../NavPages/Services";
 import WorkPage from "../NavPages/Work";
 import VisitorPage from "../NavPages/Visitor";
 import SettingsPage from "../NavPages/Settings";
+import Page404 from "../NavPages/Page404";
 import Footer from "../../components/Footer";
 import { AppContext } from "../../utils/AppContext";
 
@@ -26,7 +27,7 @@ export default function Home() {
             <Route path="/work" element={<WorkPage />} />
             <Route path="/special" element={<VisitorPage />} />
             <Route path="/settings" element={<SettingsPage />} />
-            {/* <Route path="*" element={<Page404 />} /> */}
+            <Route path="*" element={<Page404 />} />
           </Routes>
         </div>
         <Footer />

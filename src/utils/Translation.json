@@ -299,5 +299,40 @@
     "id": 64,
     "pt": "Seu Site Antigo",
     "en": "Your Old Site"
+  },
+  {
+    "id": 65,
+    "pt": "Erro 404",
+    "en": "Error 404"
+  },
+  {
+    "id": 66,
+    "pt": "Página 404",
+    "en": "Page 404"
+  },
+  {
+    "id": 67,
+    "pt": "Você pode ter digitado errado o URL.",
+    "en": "You may have mistyped the URL."
+  },
+  {
+    "id": 68,
+    "pt": "Ou a página foi removida.",
+    "en": "Or the page has been removed."
+  },
+  {
+    "id": 69,
+    "pt": "Na verdade, não há nada para ver aqui...",
+    "en": "Actually, there is nothing to see here..."
+  },
+  {
+    "id": 70,
+    "pt": "Clique abaixo para fazer algo, obrigado!",
+    "en": "Click below to do something, Thanks!"
+  },
+  {
+    "id": 71,
+    "pt": "Não Encontrado",
+    "en": "Not Found"
   }
 ]

@@ -48,7 +48,7 @@ export default function HomePage() {
         <div className="resume-container">
           {language === "en" ? (
             <a
-              href="https://drive.google.com/file/d/1j5J7n_4WGSi5VpxnsW5VrQziz9DJlBUN/view?usp=sharing"
+              href="https://drive.google.com/file/d/1s07y23K_Yc3jpIcxpPKaakiXhnEa2GzH/view?usp=sharing"
               target="_blank"
               rel="noreferrer noopener"
               className="resume-link">
@@ -57,7 +57,7 @@ export default function HomePage() {
             </a>
           ) : (
             <a
-              href="https://drive.google.com/file/d/14cq2TwENGNZCa06Jg63439rPyG7nut7b/view?usp=sharing"
+              href="https://drive.google.com/file/d/1M7fX_5gWKDf46CLgAosugWp0Xur6G5D9/view?usp=sharing"
               target="_blank"
               rel="noreferrer noopener"
               className="resume-link">

@@ -2,7 +2,7 @@ import { useContext, useLayoutEffect } from "react";
 import ".././styles/navbar.css";
 import { NavLink } from "react-router-dom";
 import { IoHome, IoSettings } from "react-icons/io5";
-import { FaCoffee } from "react-icons/fa";
+// import { FaCoffee } from "react-icons/fa";
 import { BsInfoCircleFill } from "react-icons/bs";
 import { BiChevronDown, BiChevronUp } from "react-icons/bi";
 import { MdWork } from "react-icons/md";
@@ -30,8 +30,7 @@ export default function Navbar() {
       <div className="navlinks-div">
         <NavLink
           to="/"
-          exact
-          activeClassName="active-link"
+          exact="true"
           className="nav-link"
           onClick={() => getMenuName()}>
           <IoHome className="nav-icons" />
@@ -41,8 +40,7 @@ export default function Navbar() {
 
         <NavLink
           to="/about-me"
-          exact
-          activeClassName="active-link"
+          exact="true"
           className="nav-link"
           onClick={() => getMenuName()}>
           <BsInfoCircleFill className="nav-icons" />
@@ -53,8 +51,7 @@ export default function Navbar() {
 
         <NavLink
           to="/services"
-          exact
-          activeClassName="active-link"
+          exact="true"
           className="nav-link"
           onClick={() => getMenuName()}>
           <CgNotes className="nav-icons" />
@@ -65,8 +62,7 @@ export default function Navbar() {
 
         <NavLink
           to="/work"
-          exact
-          activeClassName="active-link"
+          exact="true"
           className="nav-link"
           onClick={() => getMenuName()}>
           <MdWork className="nav-icons" />
@@ -77,25 +73,24 @@ export default function Navbar() {
 
         <NavLink
           to="/settings"
-          exact
-          activeClassName="active-link"
+          exact="true"
           className="nav-link"
           onClick={() => getMenuName()}>
           <IoSettings className="nav-icons" />
           <p className="nav-link-p">{Translation[4][language]}</p>
         </NavLink>
 
+        {/* 
         <div className="separator"></div>
-
         <NavLink
           to="/special"
-          exact
-          activeClassName="active-link"
+          exact="true"
           className="nav-link"
           onClick={() => getMenuName()}>
           <FaCoffee className="nav-icons" />
           <p className="nav-link-p">{Translation[5][language]}</p>
         </NavLink>
+         */}
       </div>
       {/* For Mobile devices */}
       <div className="mobile-navlinks">
@@ -116,8 +111,7 @@ export default function Navbar() {
             onMouseLeave={() => setOpenMenu(!openMenu)}>
             <NavLink
               to="/"
-              exact
-              activeClassName="active-link"
+              exact="true"
               className="nav-link"
               onClick={() => getMenuName()}>
               <IoHome className="nav-icons" />
@@ -127,8 +121,7 @@ export default function Navbar() {
 
             <NavLink
               to="/about-me"
-              exact
-              activeClassName="active-link"
+              exact="true"
               className="nav-link"
               onClick={() => getMenuName()}>
               <BsInfoCircleFill className="nav-icons" />
@@ -139,8 +132,7 @@ export default function Navbar() {
 
             <NavLink
               to="/services"
-              exact
-              activeClassName="active-link"
+              exact="true"
               className="nav-link"
               onClick={() => getMenuName()}>
               <CgNotes className="nav-icons" />
@@ -151,8 +143,7 @@ export default function Navbar() {
 
             <NavLink
               to="/work"
-              exact
-              activeClassName="active-link"
+              exact="true"
               className="nav-link"
               onClick={() => getMenuName()}>
               <MdWork className="nav-icons" />
@@ -163,25 +154,26 @@ export default function Navbar() {
 
             <NavLink
               to="/settings"
-              exact
-              activeClassName="active-link"
+              exact="true"
               className="nav-link"
               onClick={() => getMenuName()}>
               <IoSettings className="nav-icons" />
               <p className="nav-link-p">{Translation[4][language]}</p>
             </NavLink>
 
+            {/* 
             <div className="separator"></div>
-
+            
             <NavLink
               to="/special"
-              exact
-              activeClassName="active-link"
+              exact="true"
+  
               className="nav-link"
               onClick={() => getMenuName()}>
               <FaCoffee className="nav-icons" />
               <p className="nav-link-p">{Translation[5][language]}</p>
             </NavLink>
+             */}
           </div>
         )}
       </div>

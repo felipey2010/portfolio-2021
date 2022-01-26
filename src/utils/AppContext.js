@@ -1,9 +1,10 @@
 import { useState, createContext, useEffect } from "react";
+import Translation from "./Translation.json";
 
 export const AppContext = createContext({});
 
 const AppProvider = ({ children }) => {
-  const [loading, setLoading] = useState(false);
+  // const [loading, setLoading] = useState(false);
   const [openMenu, setOpenMenu] = useState(false);
   const [menuName, setMenuName] = useState("");
   // Site Theme
@@ -22,13 +23,21 @@ const AppProvider = ({ children }) => {
     setTheme(navTheme);
   }
 
-  function getMenuName() {
-    setMenuName(document.querySelector(".active").text.toString());
-    const timeoutId = setTimeout(() => {
-      setMenuName(document.querySelector(".active").text.toString());
-      setOpenMenu(false);
-    }, 100);
-    return () => clearTimeout(timeoutId);
+  async function getMenuName() {
+    setOpenMenu(false);
+    //Check for existence of active link
+    const flag = document.getElementsByClassName("active").length;
+
+    if (flag) {
+      let activeMenu = await document.querySelector(".active").text.toString();
+      setMenuName(activeMenu);
+      const timeoutId = setTimeout(() => {
+        setMenuName(document.querySelector(".active").text.toString());
+      }, 50);
+      return () => clearTimeout(timeoutId);
+    } else {
+      setMenuName(Translation[66][language]);
+    }
   }
 
   //Loading function
@@ -50,8 +59,8 @@ const AppProvider = ({ children }) => {
   return (
     <AppContext.Provider
       value={{
-        loading,
-        setLoading,
+        // loading,
+        // setLoading,
         theme,
         setTheme,
         defaultDark,
@@ -61,7 +70,6 @@ const AppProvider = ({ children }) => {
         openMenu,
         setOpenMenu,
         menuName,
-        setMenuName,
         getMenuName,
       }}>
       {children}
