@@ -60,10 +60,10 @@ export default function Experience() {
           <h6 className="text-h6">{Translation[54][language]}</h6>
         </div>
         {/* Put Achievements below */}
-        {/* <div className="description-text">
-          <p className="text-p">{Translation[20][language]}</p>
-        </div>
         <div className="description-text">
+          <p className="text-p">{Translation[72][language]}</p>
+        </div>
+        {/* <div className="description-text">
           <p className="text-p">{Translation[21][language]}</p>
         </div> */}
       </div>
