@@ -447,6 +447,10 @@ body {
   font-size: 14px;
 }
 
+.time-minutes {
+  padding-right: 4px;
+}
+
 .time-container svg {
   height: 20px;
   width: 20px;
