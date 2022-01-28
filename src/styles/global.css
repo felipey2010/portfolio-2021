@@ -163,19 +163,72 @@ body {
   -webkit-transition: all 0.6s ease-in-out;
 }
 
-.lazy-loading {
-  min-height: 100vh;
-  min-width: 100%;
+/* Loading screen */
+
+.loading-container {
+  height: 100vh;
+  width: 100%;
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
-  color: var(--color);
-  font-size: 16px;
-  background-color: var(--background-color);
-  font-style: italic;
-  margin: 0;
-  padding: 0;
+  background-color: #1e2020;
+  /* background-image: var(--background-image); */
+  transition: all 0.6s ease-in-out;
+  -webkit-transition: all 0.6s ease-in-out;
+  font-family: "Source Code Pro", monospace;
 }
+
+.loading-ul {
+  list-style-type: none;
+  display: flex;
+}
+
+.loading-li {
+  color: #e8eaed;
+  font-size: 2.5ch;
+  letter-spacing: 8px;
+  animation: load 1.4s linear infinite;
+}
+
+@keyframes load {
+  0% {
+    color: #e8eaed;
+    text-shadow: none;
+  }
+  90% {
+    color: #e8eaed;
+    text-shadow: none;
+  }
+  100% {
+    color: #1e2020;
+    text-shadow: none;
+  }
+}
+
+.loading-li:nth-child(1) {
+  animation-delay: 0.1s;
+}
+.loading-li:nth-child(2) {
+  animation-delay: 0.2s;
+}
+.loading-li:nth-child(3) {
+  animation-delay: 0.3s;
+}
+.loading-li:nth-child(4) {
+  animation-delay: 0.4s;
+}
+.loading-li:nth-child(5) {
+  animation-delay: 0.5s;
+}
+.loading-li:nth-child(6) {
+  animation-delay: 0.6s;
+}
+.loading-li:nth-child(7) {
+  animation-delay: 0.7s;
+}
+
+/* End of Loading screen */
 
 .main-page-container {
   width: calc(100% - 4px);
