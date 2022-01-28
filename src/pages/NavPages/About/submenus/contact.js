@@ -1,6 +1,6 @@
-import { useState, useContext } from "react";
-import { MdEmail, MdFacebook } from "react-icons/md";
-import { FaLinkedin, FaGithub } from "react-icons/fa";
+import { useState, useContext, useEffect } from "react";
+import { MdEmail } from "react-icons/md";
+import { FaLinkedin, FaGithub, FaTwitter } from "react-icons/fa";
 import Translation from "../../../../utils/Translation.json";
 import { AppContext } from "../../../../utils/AppContext";
 
@@ -9,6 +9,15 @@ export default function Contact() {
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
   const { language } = useContext(AppContext);
+  const [btnActivated, setBtnActivated] = useState(true);
+
+  useEffect(() => {
+    if (message.trim() && email.trim()) {
+      setBtnActivated(false);
+    } else {
+      setBtnActivated(true);
+    }
+  }, [email, message]);
 
   return (
     <>
@@ -19,12 +28,12 @@ export default function Contact() {
         </div>
         {/* End of first item */}
         <a
-          href="https://web.facebook.com/mahamaphilip"
+          href="https://twitter.com/felipey2010"
           target="_blank"
           rel="noreferrer noopener"
           className="contact-item-container-link">
-          <MdFacebook className="contact-item-icon" />
-          <p className="contact-item-container-text">Facebook</p>
+          <FaTwitter className="contact-item-icon" />
+          <p className="contact-item-container-text">Twitter</p>
         </a>
 
         <a
@@ -60,6 +69,7 @@ export default function Contact() {
 
           <input
             type="text"
+            required
             value={email}
             onChange={e => setEmail(e.target.value)}
             className="contact-item-email"
@@ -69,6 +79,7 @@ export default function Contact() {
         <div className="contact-message-container">
           <textarea
             type="text"
+            required
             value={message}
             onChange={e => setMessage(e.target.value)}
             className="contact-item-message"
@@ -78,7 +89,7 @@ export default function Contact() {
           />
         </div>
         <div className="contact-send">
-          <button className="contact-send-button">
+          <button className="contact-send-button" disabled={btnActivated}>
             {Translation[60][language]}
           </button>
         </div>
