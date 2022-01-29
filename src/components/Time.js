@@ -1,31 +1,11 @@
 import { useState, useEffect } from "react";
 import { IoTimeOutline } from "react-icons/io5";
 export default function Time() {
-  const [hour, setHour] = useState(0);
-  const [minute, setMinute] = useState(0);
-  const [seconds, setSeconds] = useState(0);
-  //   const [location, setLocation] = useState(new Date().)
-  //   console.log(Intl.DateTimeFormat().resolvedOptions().timeZone);
+  const [time, setTime] = useState("00:00:00");
 
   function getCurrentTime() {
-    let date = new Date();
-    let hr = date.getUTCHours();
-    let min = date.getUTCMinutes();
-    setSeconds(date.getUTCSeconds());
-
-    if (hr.toString().length === 1) {
-      let aux = "0" + hr;
-      setHour(aux);
-    } else {
-      setHour(hr);
-    }
-
-    if (min.toString().length === 1) {
-      let aux = "0" + min;
-      setMinute(aux);
-    } else {
-      setMinute(min);
-    }
+    let currentTime = new Date().toLocaleTimeString();
+    setTime(currentTime);
   }
 
   useEffect(() => {
@@ -33,13 +13,12 @@ export default function Time() {
       getCurrentTime();
     }, 1000);
     return () => clearTimeout(timeoutId);
-  }, [seconds]);
+  }, [time]);
 
   return (
     <div className="time-container">
       <IoTimeOutline />
-      <p className="time-hours">{hour}h:</p>
-      <p className="time-minutes">{minute}m</p>
+      <p className="time">{time}</p>
     </div>
   );
 }

@@ -493,21 +493,25 @@ body {
 }
 
 .time-hours,
-.time-minutes {
+.time-minutes,
+.time-dot {
   margin: 0;
   padding: 0;
   color: var(--text-black);
   font-size: 14px;
 }
 
-.time-minutes {
-  padding-right: 4px;
+.time {
+  margin: 0;
+  padding: 0;
+  color: var(--text-black);
+  font-size: 14px;
 }
 
 .time-container svg {
-  height: 20px;
-  width: 20px;
-  padding: 0;
+  height: 18px;
+  width: 18px;
+  padding: 2px;
   margin: 0;
   margin-right: 2px;
   color: var(--text-black);
