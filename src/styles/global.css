@@ -490,20 +490,12 @@ body {
   border: 1px solid var(--border-color);
   border-radius: 8px;
   margin-right: 4px;
-}
-
-.time-hours,
-.time-minutes,
-.time-dot {
-  margin: 0;
-  padding: 0;
-  color: var(--text-black);
-  font-size: 14px;
+  text-align: center;
 }
 
 .time {
   margin: 0;
-  padding: 0;
+  padding: 0 6px;
   color: var(--text-black);
   font-size: 14px;
 }
