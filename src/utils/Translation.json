@@ -339,5 +339,15 @@
     "id": 72,
     "pt": "Desenvolvi meu próprio portfólio",
     "en": "Developed my own portfolio"
+  },
+  {
+    "id": 73,
+    "pt": " Disponível",
+    "en": " Available"
+  },
+  {
+    "id": 74,
+    "pt": " Indisponível",
+    "en": " Unavailable"
   }
 ]
