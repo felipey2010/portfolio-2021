@@ -39,6 +39,10 @@
   margin-top: 12px;
 }
 
+.home-page-status .status-description {
+  color: var(--top-buttons-red);
+}
+
 .home-page-status .status-description,
 .home-page-status .status-title {
   margin-left: 6px;
