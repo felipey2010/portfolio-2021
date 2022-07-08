@@ -16,7 +16,12 @@ export default function Contact() {
   const [loading, setLoading] = useState(false);
 
   useEffect(() => {
-    if (message.trim() && email.trim()) {
+    if (
+      message.trim() &&
+      email.trim() &&
+      email.includes("@") &&
+      email.includes(".")
+    ) {
       setBtnActivated(false);
     } else {
       setBtnActivated(true);
@@ -34,6 +39,8 @@ export default function Contact() {
       //Activate loading animation
       setLoading(true);
 
+      setBtnActivated(true);
+
       const data = {
         service_id: process.env.REACT_APP_SERVICE_ID,
         template_id: process.env.REACT_APP_TEMPLATE_ID,
@@ -43,17 +50,23 @@ export default function Contact() {
         sender_message: message,
       };
 
-      axios
-        .post("https://api.emailjs.com/api/v1.0/email/send-form", data)
+      axios({
+        method: "post",
+        headers: { "Content-Type": "application/json" },
+        url: "https://api.emailjs.com/api/v1.0/email/send-form",
+        data: data,
+      })
         .then(() => {
           alert(Translation[75][language]);
         })
         .catch(error => {
           console.log(error);
+          alert(Translation[76][language]);
         })
         .finally(() => {
           setLoading(false);
           clearFields();
+          setBtnActivated(false);
           <Navigate to="/" />;
         });
     }

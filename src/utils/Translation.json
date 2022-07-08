@@ -352,7 +352,12 @@
   },
   {
     "id": 75,
-    "pt": " Mensagem enviada com sucesso",
-    "en": " Message sent successfully"
+    "pt": "Mensagem enviada com sucesso",
+    "en": "Message sent successfully"
+  },
+  {
+    "id": 76,
+    "pt": "Falhou: Mensagem não enviada. Por favor, tente de novo mais tarde",
+    "en": "Message sending failed. Please try again later"
   }
 ]
