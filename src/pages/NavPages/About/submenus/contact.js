@@ -3,6 +3,9 @@ import { MdEmail } from "react-icons/md";
 import { FaLinkedin, FaGithub, FaTwitter } from "react-icons/fa";
 import Translation from "../../../../utils/Translation.json";
 import { AppContext } from "../../../../utils/AppContext";
+import axios from "axios";
+import { Navigate } from "react-router-dom";
+import { ClockLoader } from "react-spinners";
 
 export default function Contact() {
   const [name, setName] = useState("");
@@ -10,6 +13,7 @@ export default function Contact() {
   const [message, setMessage] = useState("");
   const { language } = useContext(AppContext);
   const [btnActivated, setBtnActivated] = useState(true);
+  const [loading, setLoading] = useState(false);
 
   useEffect(() => {
     if (message.trim() && email.trim()) {
@@ -18,6 +22,48 @@ export default function Contact() {
       setBtnActivated(true);
     }
   }, [email, message]);
+
+  function sendEmail(e) {
+    e.preventDefault();
+    if (
+      email !== " " &&
+      email.includes("@") &&
+      message !== " " &&
+      name !== " "
+    ) {
+      //Activate loading animation
+      setLoading(true);
+
+      const data = {
+        service_id: process.env.REACT_APP_SERVICE_ID,
+        template_id: process.env.REACT_APP_TEMPLATE_ID,
+        user_id: process.env.REACT_APP_USER_ID,
+        sender_email: email,
+        sender_name: name,
+        sender_message: message,
+      };
+
+      axios
+        .post("https://api.emailjs.com/api/v1.0/email/send-form", data)
+        .then(() => {
+          alert(Translation[75][language]);
+        })
+        .catch(error => {
+          console.log(error);
+        })
+        .finally(() => {
+          setLoading(false);
+          clearFields();
+          <Navigate to="/" />;
+        });
+    }
+  }
+
+  function clearFields() {
+    setName("");
+    setEmail("");
+    setMessage("");
+  }
 
   return (
     <>
@@ -89,9 +135,14 @@ export default function Contact() {
           />
         </div>
         <div className="contact-send">
-          <button className="contact-send-button" disabled={btnActivated}>
+          <button
+            className="contact-send-button"
+            disabled={btnActivated}
+            onClick={sendEmail}>
             {Translation[60][language]}
           </button>
+
+          <ClockLoader size={25} color="var(--text-color)" loading={loading} />
         </div>
       </div>
     </>

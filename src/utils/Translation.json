@@ -257,18 +257,18 @@
   },
   {
     "id": 56,
-    "pt": "Como posso te chamar?",
-    "en": "What can I call you?"
+    "pt": "Nome",
+    "en": "Name"
   },
   {
     "id": 57,
-    "pt": "O seu email para enviar mensagem",
-    "en": "Your email to send message"
+    "pt": "E-mail",
+    "en": "E-mail"
   },
   {
     "id": 58,
-    "pt": "Sua mensagem",
-    "en": "Your message"
+    "pt": "Mensagem",
+    "en": "Message"
   },
   {
     "id": 59,
@@ -349,5 +349,10 @@
     "id": 74,
     "pt": " Indisponível",
     "en": " Unavailable"
+  },
+  {
+    "id": 75,
+    "pt": " Mensagem enviada com sucesso",
+    "en": " Message sent successfully"
   }
 ]

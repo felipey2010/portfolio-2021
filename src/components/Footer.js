@@ -13,8 +13,8 @@ export default function Footer() {
     // let currentDate = new Date().toLocaleDateString();
     let date = new Date();
 
-    setDay(date.getUTCDate());
-    setMonth(date.getUTCMonth() + 1);
+    setDay(date.getDate());
+    setMonth(date.getMonth() + 1);
     setYear(date.getFullYear());
   }
 
@@ -29,9 +29,8 @@ export default function Footer() {
     <div className="footer-container">
       <p className="footer-p">
         {Translation[17][language]}
-        {day.toString().length > 1 ? <>{day}</> : <>{`${"0" + day}`}</>}/
-        {month.toString().length > 1 ? <>{month}</> : <>{`${"0" + month}`}</>}/
-        {year}
+        <>{day.toString().padStart(2, "0")}</>/
+        <>{month.toString().padStart(2, "0")}</>/{year}
       </p>
     </div>
   );
