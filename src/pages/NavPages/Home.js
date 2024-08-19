@@ -19,7 +19,7 @@ export default function HomePage() {
         <div className="home-page-status">
           <BsStarFill />
           <p className="status-title">Status :</p>
-          <p className="status-description">{Translation[74][language]}</p>
+          <p className="status-description">{Translation[73][language]}</p>
         </div>
       </div>
       <div className="home-page-div">
