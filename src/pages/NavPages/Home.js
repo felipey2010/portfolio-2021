@@ -1,15 +1,22 @@
-import { useContext } from "react";
-import "../../styles/homePage.css";
-import ProfilePic from "../../images/4Github.png";
+import { useContext } from "react"
+import "../../styles/homePage.css"
+import ProfilePic from "../../images/4Github.png"
 // import { BarLoader } from "react-spinners";
-import Translation from "../../utils/Translation.json";
-import { AppContext } from "../../utils/AppContext";
-import { BiLinkExternal } from "react-icons/bi";
-import { BsStarFill } from "react-icons/bs";
-import Typed from "react-typed";
+import Translation from "../../utils/Translation.json"
+import { AppContext } from "../../utils/AppContext"
+import { BiLinkExternal } from "react-icons/bi"
+import { BsStarFill } from "react-icons/bs"
+import Typed from "react-typed"
+
+const filePath = "/downloads/PHILIP_MAHAMA_AKPANYI.pdf"
 
 export default function HomePage() {
-  const { language } = useContext(AppContext);
+  const { language } = useContext(AppContext)
+
+  function openFile() {
+    window.open(filePath, "_blank")
+  }
+
   return (
     <div className="home-page-container">
       <div className="home-page-div">
@@ -56,27 +63,12 @@ export default function HomePage() {
           </div>
         </div>
         <div className="resume-container">
-          {language === "en" ? (
-            <a
-              href="https://drive.google.com/file/d/1s07y23K_Yc3jpIcxpPKaakiXhnEa2GzH/view?usp=sharing"
-              target="_blank"
-              rel="noreferrer noopener"
-              className="resume-link">
-              {Translation[55][language]}
-              <BiLinkExternal className="resume-icon" />
-            </a>
-          ) : (
-            <a
-              href="https://drive.google.com/file/d/1M7fX_5gWKDf46CLgAosugWp0Xur6G5D9/view?usp=sharing"
-              target="_blank"
-              rel="noreferrer noopener"
-              className="resume-link">
-              {Translation[55][language]}
-              <BiLinkExternal className="resume-icon" />
-            </a>
-          )}
+          <button onClick={openFile} className="resume-link">
+            {Translation[55][language]}
+            <BiLinkExternal className="resume-icon" />
+          </button>
         </div>
       </div>
     </div>
-  );
+  )
 }
